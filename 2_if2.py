@@ -15,13 +15,34 @@
 
 """
 #Здесь я буду писать свою функцию!
+def comparison_function(string_1, string_2):
+    if not (isinstance(string_1, str) and isinstance(string_2, str)):
+        return 0
+    elif (string_1 == string_2):
+        return 1
+    elif (not (string_1 == string_2) and len(string_1) > len(string_2)):
+        return 2
+    elif (not (string_1 == string_2) and string_2 == 'learn'):
+        return 2
+#    else:
+#        return 10
+
 
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
-    
+#    a = comparison_function('stiiing1', 'stringgggg2')
+#    print(a)
+    a = comparison_function(1, 'stringgg2')
+    print(a)
+    a = comparison_function('stringgg2', 'stringgg2')
+    print(a)
+    a = comparison_function('stringgg2', 'learn')
+    print(a)
+    a = comparison_function(10, 5)
+    print(a)
+
 if __name__ == "__main__":
     main()
