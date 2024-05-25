@@ -30,9 +30,9 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    age = int(input('Сколько Вам лет? '))
-    print('Ваш возраст:', age, 'лет!')
-    activity = age_detector(age)
+    age_to_ptint = int(input('Сколько Вам лет? '))
+    print('Ваш возраст:', age_to_print, 'лет!')
+    activity = age_detector(age_to_print)
     #return age
     print(activity)
 
