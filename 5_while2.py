@@ -23,9 +23,9 @@ questions_and_answers = {
 
 def ask_user(answers_dict):
 
-    print("Введите вопрос:")
+#    print("Введите вопрос:")
     while True:
-        print(questions_and_answers.get(input()))
+        print(questions_and_answers.get(input("Введите вопрос: ")))
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)
