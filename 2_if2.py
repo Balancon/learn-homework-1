@@ -21,7 +21,7 @@ def comparison_function(string_1, string_2):
     #else:
         if string_1 == string_2:
             return 1
-        elif (not (string_1 == string_2) and len(string_1) > len(string_2)):
+        elif len(string_1) > len(string_2):
             return 2
         elif string_2 == 'learn':
             return 3
